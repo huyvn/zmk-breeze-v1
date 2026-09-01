@@ -10,6 +10,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+
+&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+
 &mmv {
     time-to-max-speed-ms = <500>;
     trigger-period-ms = <16>;
@@ -55,14 +59,6 @@
         compatible = "zmk,keymap";
 
         linux {
-            // Ref: https://zmkfirmware.dev/docs/codes/
-            // ---  MAIN  -----------------------------------------------------------------------------------------------------------------------
-            // |    ESC    |     1     |     2     |     3      |      4      |      5     |                           |      6      |      7     |      8      |      9     |     0    |    BSPC    | |    -/_    |     =/+     |    GRAVE    |
-            // |    TAB    |     Q     |     W     |     E      |      R      |      T     |                           |      Y      |      U     |      I      |      O     |     P    |    DEL     | |     \     |      [      |      ]      |
-            // |   LCTRL   |     A     |     S     |     D      |      F      |      G     |                           |      H      |      J     |      K      |      L     |     ;    |     '      | |           |      UP     |             |
-            // |   SHIFT   |     Z     |     X     |     C      |      V      |      B     |                           |      N      |      M     |      ,      |      .     |     /    |   RSHIFT   | |     L     |      DN     |      R      |
-            //                                     |   NUMPAD   |     LALT    |    LCMD    |   SPACE    |  |   ENTER   |   FUNCTION  |  MACOS APP |  MACOS LANG |
-
             bindings = <
 &kp F1        &kp F2     &kp F3           &kp F4        &kp F5             &kp F6           &kp F7            &kp F8              &kp F9        &kp F10           &kp F11   &kp F12            &kp GRAVE  &kp HOME  &kp PAGE_UP
 &kp TAB       &kp Q      &kp W            &kp E         &kp R              &kp T            &kp Y             &kp U               &kp I         &kp O             &kp P     &kp BSLH           &kp TILDE  &kp END   &kp PAGE_DOWN
@@ -73,13 +69,6 @@
         };
 
         num_nav {
-            // ---  FUNCTION  -------------------------------------------------------------------------------------------------------------------
-            // | BT Clear  |  BT Prev  |  BT Next  |            |             |            |                           |             |            |             |            |          |            | |           |             |             |
-            // |           |           |           |            |             |            |                           |             |            |     UP      |            |          |            | |           |             |             |
-            // |           |           |           |            |             |            |                           |             |    LEFT    |    DOWN     |   RIGHT    |          |            | |           |             |             |
-            // |           |           |           |            |             |            |                           |             |    MUTE    |  VOL DOWN   |   VOL UP   |          |            | |           |             |             |
-            //                                     |            |             |            |            |  |           |             |            |             |
-
             bindings = <
 &bootloader  &sys_reset     &trans  &kp FSLH      &kp LS(STAR)  &trans        &kp PRINTSCREEN  &kp CAPS       &kp SCROLLLOCK  &kp KP_NUMLOCK  &sys_reset     &bootloader  &trans  &trans  &trans
 &trans       &kp LS(PIPE)   &kp N7  &kp N8        &kp N9        &kp MINUS     &kp PG_UP        &kp HOME       &kp UP          &kp END         &kp BACKSLASH  &kp PIPE     &trans  &trans  &trans
@@ -90,13 +79,6 @@
         };
 
         sym_mouse {
-            // ---  NUMPAD  -------------------------------------------------------------------------------------------------------------------
-            // |           |           |           |            |             |            |                           |       =       |      /       |      *       |      -     |          |            | |           |             |             |
-            // |           |           |           |            |             |            |                           |       7       |      8       |      9       |      +     |          |            | |           |             |             |
-            // |           |           |           |            |             |            |                           |       4       |      5       |      6       |            |          |            | |           |             |             |
-            // |           |           |           |            |             |            |                           |       1       |      2       |      3       |            |          |            | |           |             |             |
-            //                                     |            |             |            |            |  |           |       0       |      .       |              |
-
             bindings = <
 &bootloader  &sys_reset     &kp LS(LBRC)  &kp LS(RBRC)   &kp LBKT       &kp RBKT         &msc SCRL_UP    &trans          &trans          &trans           &sys_reset  &bootloader  &trans  &trans  &trans
 &trans       &kp BSLH       &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)     &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans      &trans       &trans  &trans  &trans
