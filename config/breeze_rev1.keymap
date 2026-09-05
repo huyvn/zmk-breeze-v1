@@ -78,18 +78,18 @@
 &bootloader   &sys_reset     &trans  &kp FSLH      &kp LS(STAR)  &trans        &kp PRINTSCREEN  &kp CAPS       &kp SCROLLLOCK  &kp KP_NUMLOCK  &sys_reset     &bootloader  &trans  &trans  &trans
 &trans        &kp LS(PIPE)   &kp N7  &kp N8        &kp N9        &kp MINUS     &kp PG_UP        &kp HOME       &kp UP          &kp END         &kp BACKSLASH  &kp PIPE     &trans  &trans  &trans
 &kp CAPS      &kp GRAVE      &kp N4  &kp N5        &kp N6        &kp LS(PLUS)  &kp PAGE_DOWN    &kp LEFT       &kp DOWN        &kp RIGHT       &kp PIPE       &trans       &trans
-&trans        &kp LS(TILDE)  &kp N1  &kp NUMBER_2  &kp N3        &kp EQUAL     &trans           &kp BACKSPACE  &kp INS         &kp DELETE      &kp BACKSLASH  &trans       &trans  &trans  &trans
+&kp DOT       &kp LS(TILDE)  &kp N1  &kp NUMBER_2  &kp N3        &kp EQUAL     &trans           &kp BACKSPACE  &kp INS         &kp DELETE      &kp BACKSLASH  &trans       &trans  &trans  &trans
 &kp NUMBER_0  &trans         &trans  &trans        &trans        &trans        &trans           &trans
             >;
         };
 
         sym_mouse {
             bindings = <
-&bootloader  &sys_reset     &kp LS(LBRC)  &kp LS(RBRC)   &kp LBKT       &kp RBKT         &msc SCRL_UP    &trans          &trans          &trans           &sys_reset  &bootloader  &trans  &trans  &trans
-&trans       &kp BSLH       &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)     &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans      &trans       &trans  &trans  &trans
-&trans       &kp MINUS      &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(LBRC)     &kp LBKT        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4    &trans       &trans
-&trans       &kp LS(UNDER)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(RBRC)     &kp RBKT        &mkp LCLK       &mkp MCLK       &mkp RCLK        &mkp MB5    &trans       &trans  &trans  &trans
-&trans       &trans         &trans        &trans         &trans         &kp KP_NUMBER_0  &kp KP_DOT      &trans
+&bootloader  &sys_reset     &kp LS(LBRC)  &kp LS(RBRC)   &kp LBKT       &kp RBKT      &msc SCRL_UP    &trans          &trans          &trans           &sys_reset  &bootloader  &trans  &trans  &trans
+&trans       &kp BSLH       &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)  &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans      &trans       &trans  &trans  &trans
+&trans       &kp MINUS      &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(LBRC)  &kp LBKT        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4    &trans       &trans
+&trans       &kp LS(UNDER)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(RBRC)  &kp RBKT        &mkp LCLK       &mkp MCLK       &mkp RCLK        &mkp MB5    &trans       &trans  &trans  &trans
+&trans       &trans         &trans        &trans         &trans         &trans        &trans          &trans
             >;
         };
 
