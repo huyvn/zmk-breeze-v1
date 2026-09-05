@@ -15,7 +15,15 @@ Keyboard can only turn back on by pressing reset hardware button, or flip on/off
 
 There's a trigger in the keymap.
 
-## Using the Keymap Editor
+## Editing Keymap
+
+### ZMK Studio
+
+The firmware is built with ZMK Studio.
+
+Connect keyboard to computer, and head to https://zmk.studio/.
+
+### Using the Keymap Editor
 
 1. Fork this repository.
 2. Navigate to the keymap editor website and click on the GitHub icon or source on the top left.

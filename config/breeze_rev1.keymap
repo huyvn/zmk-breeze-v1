@@ -88,7 +88,7 @@
 &bootloader  &sys_reset     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT              &kp RBKT               &msc SCRL_UP    &trans          &trans          &trans           &sys_reset  &bootloader  &trans  &trans  &trans
 &trans       &kp BSLH       &kp AMPS        &kp STAR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans      &trans       &trans  &trans  &trans
 &trans       &kp MINUS      &kp DOLLAR      &kp PERCENT      &kp CARET             &kp LEFT_BRACE         &kp LBKT        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4    &trans       &trans
-&trans       &kp LS(UNDER)  &kp EXCL        &kp AT           &kp POUND             &kp RIGHT_BRACE        &kp RBKT        &mkp LCLK       &mkp MCLK       &mkp RCLK        &mkp MB5    &trans       &trans  &trans  &trans
+&trans       &kp UNDER      &kp EXCL        &kp AT           &kp POUND             &kp RIGHT_BRACE        &kp RBKT        &mkp LCLK       &mkp MCLK       &mkp RCLK        &mkp MB5    &trans       &trans  &trans  &trans
 &trans       &trans         &trans          &trans           &trans                &trans                 &trans          &trans
             >;
         };
