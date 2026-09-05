@@ -1,0 +1,322 @@
+layout: {zmk_keyboard: breeze_rev1}
+layers:
+  linux:
+  - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10]
+  - - F11
+    - F12
+    - {t: mac, h: toggle}
+    - HOME
+    - PgUp
+    - {t: '`', s: '~'}
+    - Q
+    - W
+    - E
+    - R
+  - - T
+    - Y
+    - U
+    - I
+    - O
+    - P
+    - {t: \, s: '|'}
+    - '&softoff'
+    - END
+    - PgDn
+  - - $$mdi:apple-keyboard-control$$
+    - A
+    - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+    - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+    - {t: G, h: '$$mdi:apple-keyboard-command$$'}
+    - {t: H, h: RIGHT GUI}
+    - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+    - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+    - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - - {t: ;, s: ':'}
+    - {t: '''', s: '"'}
+    - $$mdi:arrow-up-bold$$
+    - $$mdi:apple-keyboard-option$$
+    - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+  - - M
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, s: '?'}
+    - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+    - $$mdi:arrow-left-bold$$
+    - $$mdi:arrow-down-bold$$
+    - $$mdi:arrow-right-bold$$
+    - $$mdi:apple-keyboard-command$$
+    - {t: '$$mdi:keyboard-space$$', h: num_nav}
+  - - {t: '$$mdi:keyboard-tab$$', h: sym_mouse}
+    - {t: '$$mdi:keyboard-esc$$', h: misc_media}
+    - {t: '$$mdi:backspace-reverse-outline$$', h: misc_media}
+    - {t: '$$mdi:keyboard-return$$', h: sym_mouse}
+    - {t: '$$mdi:backspace$$', h: num_nav}
+    - $$mdi:apple-keyboard-control$$
+  num_nav:
+  - - $$mdi:progress-download$$
+    - {t: '$$mdi:backup-restore$$', type: bootloader}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: /, s: '?'}
+    - '*'
+    - {t: '$$mdi:transfer$$', type: trans}
+    - PRINTSCREEN
+    - $$mdi:apple-keyboard-caps$$
+    - SCROLLLOCK
+    - KP NUMLOCK
+  - - {t: '$$mdi:backup-restore$$', type: bootloader}
+    - $$mdi:progress-download$$
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - '|'
+    - {t: '7', s: '&'}
+    - {t: '8', s: '*'}
+    - {t: '9', s: (}
+  - - {t: '-', s: _}
+    - PG UP
+    - HOME
+    - $$mdi:arrow-up-bold$$
+    - END
+    - {t: \, s: '|'}
+    - '|'
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+  - - $$mdi:apple-keyboard-caps$$
+    - {t: '`', s: '~'}
+    - {t: '4', s: $}
+    - {t: '5', s: '%'}
+    - {t: '6', s: ^}
+    - +
+    - PgDn
+    - $$mdi:arrow-left-bold$$
+    - $$mdi:arrow-down-bold$$
+    - $$mdi:arrow-right-bold$$
+  - - '|'
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: ., s: '>'}
+    - '~'
+    - {t: '1', s: '!'}
+    - '2'
+    - {t: '3', s: '#'}
+    - {t: '=', s: +}
+    - {t: '$$mdi:transfer$$', type: trans}
+  - - {t: '$$mdi:backspace$$', type: backspace}
+    - INS
+    - $$mdi:backspace-reverse-outline$$
+    - {t: \, s: '|'}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - '0'
+    - {type: held}
+  - - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {type: held alternate}
+    - {t: '$$mdi:transfer$$', type: trans}
+  sym_mouse:
+  - - $$mdi:progress-download$$
+    - {t: '$$mdi:backup-restore$$', type: bootloader}
+    - '{'
+    - '}'
+    - {t: '[', s: '{'}
+    - {t: ']', s: '}'}
+    - $$mdi:pan-up$$
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+  - - {t: '$$mdi:backup-restore$$', type: bootloader}
+    - $$mdi:progress-download$$
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: \, s: '|'}
+    - '&'
+    - '*'
+    - (
+  - - )
+    - $$mdi:pan-down$$
+    - $$mdi:pan-left$$
+    - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+    - $$mdi:pan-right$$
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+  - - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '-', s: _}
+    - $
+    - '%'
+    - ^
+    - '{'
+    - {t: '[', s: '{'}
+    - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+    - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+    - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - - '&mkp MB4'
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - Sft+_
+    - '!'
+    - '@'
+    - '#'
+    - '}'
+    - {t: ']', s: '}'}
+  - - $$mdi:mouse-left-click-outline$$
+    - $$mdi:mouse-scroll-wheel$$
+    - $$mdi:mouse-right-click-outline$$
+    - '&mkp MB5'
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+  - - {type: held}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {type: held alternate}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+  misc_media:
+  - - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+    - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+    - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+    - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+    - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+    - $$mdi:bluetooth-off$$
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+  - - {t: '$$mdi:transfer$$', type: trans}
+    - '&softoff'
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - $$mdi:progress-download$$
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
+    - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - - OUT BLE
+    - {t: '$$mdi:transfer$$', type: trans}
+    - $$mdi:volume-low$$
+    - $$mdi:volume-high$$
+    - MUTE
+    - {t: '$$mdi:transfer$$', type: trans}
+    - $$mdi:progress-download$$
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+  - - {t: '$$mdi:backup-restore$$', type: bootloader}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - OUT USB
+    - {t: '$$mdi:transfer$$', type: trans}
+    - PLAY PAUSE
+    - $$mdi:skip-previous$$
+    - $$mdi:skip-next$$
+  - - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:backup-restore$$', type: bootloader}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - '&softoff'
+    - UNDO
+    - CUT
+    - COPY
+    - PASTE
+    - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+    - {t: '$$mdi:transfer$$', type: trans}
+  - - {t: '$$mdi:transfer$$', type: trans}
+    - REWIND
+    - FAST FORWARD
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - BT CLR ALL
+    - {t: '$$mdi:transfer$$', type: trans}
+  - - {t: '$$mdi:transfer$$', type: trans}
+    - {type: held}
+    - {type: held alternate}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: '$$mdi:transfer$$', type: trans}
+  mac:
+  - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10]
+  - - F11
+    - F12
+    - {t: linux, h: toggle}
+    - HOME
+    - PgUp
+    - {t: '`', s: '~'}
+    - Q
+    - W
+    - E
+    - R
+  - - T
+    - Y
+    - U
+    - I
+    - O
+    - P
+    - {t: \, s: '|'}
+    - '&softoff'
+    - END
+    - PgDn
+  - - $$mdi:apple-keyboard-command$$
+    - $$mdi:apple-keyboard-control$$
+    - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+    - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+    - {t: G, h: '$$mdi:apple-keyboard-command$$'}
+    - {t: H, h: RIGHT GUI}
+    - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+    - {t: K, h: '$$mdi:apple-keyboard-command$$'}
+    - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - - $$mdi:apple-keyboard-control$$
+    - {t: '''', s: '"'}
+    - $$mdi:arrow-up-bold$$
+    - $$mdi:apple-keyboard-option$$
+    - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+  - - M
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, s: '?'}
+    - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+    - $$mdi:arrow-left-bold$$
+    - $$mdi:arrow-down-bold$$
+    - $$mdi:arrow-right-bold$$
+    - $$mdi:apple-keyboard-control$$
+    - {t: '$$mdi:keyboard-space$$', h: num_nav}
+  - - {t: '$$mdi:keyboard-tab$$', h: sym_mouse}
+    - {t: '$$mdi:keyboard-esc$$', h: misc_media}
+    - {t: '$$mdi:backspace-reverse-outline$$', h: misc_media}
+    - {t: '$$mdi:keyboard-return$$', h: sym_mouse}
+    - {t: '$$mdi:backspace$$', h: num_nav}
+    - $$mdi:apple-keyboard-command$$
+combos:
+- p: [0, 48]
+  k: '&softoff'
